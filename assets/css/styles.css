@@ -721,16 +721,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* =========================================================
    WHY CHOOSE
    ========================================================= */
-.why { background: var(--porcelain); padding-bottom: var(--section-y); }
-.why-media { position: relative; height: clamp(420px, 62vh, 640px); overflow: hidden; display: flex; align-items: flex-end; isolation: isolate; }
-.why-media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; z-index: -2; }
-.why-media::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(14, 28, 46, .85) 0%, rgba(14, 28, 46, .2) 55%, rgba(14, 28, 46, 0) 100%); }
-.why-intro { padding-bottom: 180px; }
+/* The theatre photo runs behind the whole section, so the card sits on the image instead of an empty band */
+.why { position: relative; isolation: isolate; overflow: hidden; background: var(--navy-ink); padding-bottom: clamp(72px, 9vw, 120px); }
+.why-media { height: clamp(380px, 54vh, 560px); display: flex; align-items: flex-end; }
+.why-media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; z-index: -2; }
+.why-media::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(14, 28, 46, 0) 0%, rgba(14, 28, 46, .35) 30%, rgba(14, 28, 46, .8) 60%, rgba(14, 28, 46, .94) 100%); }
+.why-intro { padding-bottom: 150px; }
 .why-intro .display-lg { color: var(--white); max-width: 14em; }
 
 .why-grid {
   position: relative; z-index: 2;
-  margin-top: -130px;
+  margin-top: -110px;
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
   background: var(--white);
   border-radius: var(--radius-xl);
