@@ -11,7 +11,7 @@
 
 ## Site structure
 - Static single page: `index.html`, `assets/css/styles.css`, `assets/js/main.js`. No build step.
-- Design system is shared with the main Dr Davide site (repo `OnlineMarketingForDoctors/constantino-davide`): navy #1A3350, brass #C6A27A, Bodoni Moda + Figtree.
+- Design system is shared with the main Dr Davide site (repo `OnlineMarketingForDoctors/constantino-davide`): navy #1A3350, brass #C6A27A, Figtree for text. Headlines on this page use Tenor Sans (the main site uses Bodoni Moda).
 - Images are webp in `assets/img/` (`fl/` = generated for this page, `gen/` and `real/` = reused from the main site, `ba/` = facelift before and afters).
 - Pricing is placeholder (marked with an HTML comment). The booking form is front end only and is not connected to a CRM yet.
 - Copy rule: no em dashes.
