@@ -155,7 +155,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .site-header::before {
   content: ""; position: absolute; inset: 0 0 -40px 0; z-index: -1; pointer-events: none;
-  background: linear-gradient(180deg, rgba(14, 28, 46, .55), rgba(14, 28, 46, 0));
+  background: linear-gradient(180deg, rgba(14, 28, 46, .75), rgba(14, 28, 46, 0));
   transition: opacity .4s var(--ease);
 }
 .site-header.is-scrolled {
