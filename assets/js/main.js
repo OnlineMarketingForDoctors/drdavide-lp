@@ -62,15 +62,15 @@
     var heroTimer = null;
     var userTouched = false;
 
-    patients.forEach(function (p) { var i = new Image(); i.src = 'assets/img/ba/' + p + '-after.webp'; var j = new Image(); j.src = 'assets/img/ba/' + p + '-before.webp'; });
+    patients.forEach(function (p) { var i = new Image(); i.src = '/assets/img/ba/' + p + '-after.webp'; var j = new Image(); j.src = '/assets/img/ba/' + p + '-before.webp'; });
 
     function show(i) {
       current = i;
       dots.forEach(function (d, k) { d.setAttribute('aria-selected', String(k === i)); });
       heroCompare.classList.add('is-swapping');
       setTimeout(function () {
-        afterImg.src = 'assets/img/ba/' + patients[i] + '-after.webp';
-        beforeImg.src = 'assets/img/ba/' + patients[i] + '-before.webp';
+        afterImg.src = '/assets/img/ba/' + patients[i] + '-after.webp';
+        beforeImg.src = '/assets/img/ba/' + patients[i] + '-before.webp';
         heroRange.value = 50; heroCompare.style.setProperty('--pos', '50%');
         heroCompare.classList.remove('is-swapping');
         if (!userTouched && !reduceMotion) sweep();

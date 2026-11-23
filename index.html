@@ -4,725 +4,87 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Facelift in London | Dr Costantino Davide</title>
-  <meta name="description" content="Facelift and neck lift with Dr Costantino Davide, GMC specialist plastic surgeon on Harley Street and in Holloway, London. Natural, lasting results that still look like you.">
+  <title>Landing Pages | Dr Costantino Davide</title>
   <meta name="theme-color" content="#1A3350">
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" imagesrcset="assets/img/gen/theatre-hero-1400.webp 1400w, assets/img/gen/theatre-hero-2000.webp 2000w" imagesizes="100vw" media="(min-width: 900px)">
-  <link rel="preload" as="image" imagesrcset="assets/img/gen/theatre-hero-mobile-900.webp 900w, assets/img/gen/theatre-hero-mobile-1500.webp 1500w" imagesizes="100vw" media="(max-width: 899px)">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    :root {
+      --navy: #1A3350; --navy-deep: #12253B; --navy-ink: #0E1C2E;
+      --brass: #C6A27A; --brass-light: #DDC3A2;
+      --porcelain: #EEF1F4; --mist: #DCE3EA; --white: #FFFFFF;
+      --on-navy: #E8EDF3; --on-navy-muted: #B4C1D0;
+      --ease: cubic-bezier(.22, .61, .36, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      background: var(--navy-ink); color: var(--on-navy);
+      font-family: "Figtree", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 8px; }
+    .wrap { max-width: 1160px; margin-inline: auto; padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 40px) 64px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    header img { width: clamp(180px, 20vw, 230px); }
+    header p { margin: 0; font-size: .9375rem; color: var(--on-navy-muted); }
+    h1 {
+      margin: clamp(56px, 9vw, 110px) 0 12px;
+      font-family: "Tenor Sans", sans-serif; font-weight: 400;
+      font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.04; letter-spacing: -0.02em; color: var(--white);
+    }
+    .intro { margin: 0 0 48px; max-width: 34em; color: var(--on-navy-muted); }
+    .pages { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 28px; }
+    .page-card {
+      display: block; text-decoration: none; height: 100%;
+      background: var(--navy); border: 1px solid rgba(221, 195, 162, .22); border-radius: 24px; overflow: hidden;
+      transition: transform .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease);
+    }
+    .page-card:hover { transform: translateY(-4px); border-color: var(--brass); box-shadow: 0 30px 60px -28px rgba(0, 0, 0, .7); }
+    .page-card figure { margin: 0; aspect-ratio: 16 / 10; overflow: hidden; }
+    .page-card figure img { width: 100%; height: 100%; object-fit: cover; object-position: 75% 30%; transition: transform 1.2s var(--ease); }
+    .page-card:hover figure img { transform: scale(1.04); }
+    .page-body { padding: 24px 26px 28px; }
+    .page-body h2 { margin: 0; font-family: "Tenor Sans", sans-serif; font-weight: 400; font-size: 1.75rem; color: var(--white); }
+    .page-body p { margin: 8px 0 18px; color: var(--on-navy-muted); font-size: 1rem; }
+    .page-url { font-size: .875rem; font-weight: 700; color: var(--brass-light); }
+    footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: .875rem; color: var(--on-navy-muted); }
+    footer a { color: var(--white); font-weight: 600; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <img src="/assets/img/logos/logo-white.webp" alt="Dr Costantino Davide" width="900" height="230">
+      <p>Landing page index</p>
+    </header>
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header" data-header>
-    <div class="header-inner">
-      <a class="header-logo" href="#top" aria-label="Dr Costantino Davide, back to top">
-        <img class="logo-white" src="assets/img/logos/logo-white.webp" alt="Dr Costantino Davide" width="900" height="230">
-        <img class="logo-blue" src="assets/img/logos/logo-blue.webp" alt="" width="900" height="230" aria-hidden="true">
-      </a>
-      <a class="btn btn-brass header-mobile-cta" href="#book">Book a consultation</a>
+    <main>
+      <h1>Landing pages</h1>
+      <p class="intro">Campaign pages for Dr Costantino Davide. Each page is hidden from search engines and opens on its own address.</p>
 
-      <nav class="header-nav" aria-label="Page sections">
-        <ul>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#procedure">Procedure</a></li>
-          <li><a href="#journey">Journey</a></li>
-          <li><a href="#surgeon">Surgeon</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-
-      <a class="header-phone" href="tel:+447949910562">
-        <span class="header-phone-label">Call us now</span>
-        <span class="header-phone-number">+44 7949 910562</span>
-      </a>
-      <a class="btn btn-brass header-cta" href="#book">Book a consultation</a>
-
-      <div class="header-icons">
-        <a class="icon-btn" href="tel:+447949910562" aria-label="Call +44 7949 910562">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-        </a>
-        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-
-    <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
-      <nav aria-label="Page sections, mobile">
-        <ul>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#procedure">Procedure</a></li>
-          <li><a href="#journey">Journey</a></li>
-          <li><a href="#surgeon">Surgeon</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-      <a class="mobile-menu-phone" href="tel:+447949910562"><span>Call us now</span>+44 7949 910562</a>
-      <a class="btn btn-brass" href="#book">Book a consultation</a>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true">
-        <picture>
-          <source media="(max-width: 899px)" srcset="assets/img/gen/theatre-hero-mobile-900.webp 900w, assets/img/gen/theatre-hero-mobile-1500.webp 1500w" sizes="100vw">
-          <img src="assets/img/gen/theatre-hero-2000.webp" srcset="assets/img/gen/theatre-hero-1400.webp 1400w, assets/img/gen/theatre-hero-2000.webp 2000w" sizes="100vw" alt="" width="2000" height="1342" fetchpriority="high">
-        </picture>
-      </div>
-
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-title" class="hero-title">A facelift that still looks like you</h1>
-          <p class="hero-sub">Dr Costantino Davide lifts the deeper layers of the face and neck, so your jawline is defined again and your expression stays your own.</p>
-          <ul class="hero-points">
-            <li>Lifts the deep tissues, never just the skin</li>
-            <li>Fine scars hidden around the ear and hairline</li>
-            <li>Back to most routines in 10 to 14 days</li>
-            <li>GMC specialist plastic surgeon, 35 years in surgery</li>
-            <li>Consultations on Harley Street and in Holloway</li>
-          </ul>
-          <div class="hero-actions">
-            <a class="btn btn-brass btn-lg" href="#book">Book a consultation</a>
-            <a class="btn btn-ghost btn-lg" href="#results">Before &amp; afters</a>
-          </div>
-        </div>
-
-        <aside class="hero-ba" aria-label="Before and after preview" data-hero-ba>
-          <div class="compare compare--mini" data-compare style="--pos: 50%">
-            <img class="compare-after" src="assets/img/ba/p05-after.webp" alt="Patient after facelift" width="841" height="631" data-hero-after>
-            <div class="compare-before"><img src="assets/img/ba/p05-before.webp" alt="Same patient before facelift" width="841" height="631" data-hero-before></div>
-            <span class="compare-handle" aria-hidden="true"><span></span></span>
-            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
-            <span class="compare-tag compare-tag--before">Before</span>
-            <span class="compare-tag compare-tag--after">After</span>
-          </div>
-          <div class="hero-ba-foot">
-            <p>Real patients of Dr Davide</p>
-            <div class="hero-ba-dots" role="tablist" aria-label="Choose a patient">
-              <button type="button" role="tab" aria-selected="true" aria-label="Patient 1" data-hero-dot="0"></button>
-              <button type="button" role="tab" aria-selected="false" aria-label="Patient 2" data-hero-dot="1"></button>
-              <button type="button" role="tab" aria-selected="false" aria-label="Patient 3" data-hero-dot="2"></button>
+      <ul class="pages">
+        <li>
+          <a class="page-card" href="/facelift/">
+            <figure><img src="/assets/img/gen/theatre-hero-1400.webp" alt="" width="1400" height="939" loading="lazy"></figure>
+            <div class="page-body">
+              <h2>Facelift</h2>
+              <p>Face and neck lift with Dr Davide on Harley Street and in Holloway, London.</p>
+              <span class="page-url">/facelift/</span>
             </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ============ INTRO ============ -->
-    <section class="intro" aria-label="Introduction">
-      <div class="container intro-grid">
-        <p class="intro-text">Do you catch your reflection and see softer jowls, a heavier jawline or a neck that no longer matches how you feel? We understand how disheartening that is, especially when creams and fillers stop helping. A facelift repositions the deeper tissues of your face and neck instead of pulling the skin. You leave with a firmer, defined profile and a fresher face that still looks unmistakably like you.</p>
-        <div class="intro-media">
-          <figure class="intro-main reveal">
-            <img src="assets/img/fl/mirror-1200.webp" srcset="assets/img/fl/mirror-700.webp 700w, assets/img/fl/mirror-1200.webp 1200w" sizes="(min-width: 1024px) 34vw, 80vw" alt="A woman studying her jawline in an antique mirror" width="1200" height="1607" loading="lazy">
-          </figure>
-          <figure class="intro-satellite" data-parallax="-0.08">
-            <img src="assets/img/fl/jaw-700.webp" alt="Close view of a smooth, defined jawline and neck" width="700" height="869" loading="lazy">
-          </figure>
-          <p class="intro-note" data-parallax="0.06">The goal is not tighter skin. It is restored support, so the result is believable even up close.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ RESULTS ============ -->
-    <section class="results" id="results" aria-labelledby="results-title">
-      <div class="container">
-        <div class="results-head">
-          <h2 id="results-title" class="display-lg">Real results, real patients</h2>
-          <p>Drag the handle across each photo to reveal the result. Every patient here was treated by Dr Davide.</p>
-          <div class="results-nav">
-            <button type="button" class="round-btn" data-results-prev aria-label="Previous patients">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-            </button>
-            <button type="button" class="round-btn" data-results-next aria-label="Next patients">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="results-viewport" data-results>
-        <ul class="results-track" data-results-track>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p01-after.webp" alt="Patient 1 after facelift, right profile" width="1060" height="795" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p01-before.webp" alt="Patient 1 before facelift, right profile" width="1060" height="795" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 1 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Jowls and loose neck skin.</strong> A smoother lower face and defined jawline, with the scar tucked around the ear.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p02-after.webp" alt="Patient 2 after facelift" width="843" height="632" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p02-before.webp" alt="Patient 2 before facelift" width="843" height="632" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 2 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Heavy, undefined jawline.</strong> A cleaner jaw and a smoother line from chin to neck.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p03-after.webp" alt="Patient 3 after facelift" width="1060" height="795" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p03-before.webp" alt="Patient 3 before facelift" width="1060" height="795" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 3 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Marked laxity and deep folds.</strong> A lifted, firmer lower face with a scar following the crease in front of the ear.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p04-after.webp" alt="Patient 4 after facelift" width="840" height="630" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p04-before.webp" alt="Patient 4 before facelift" width="840" height="630" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 4 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Jowling and neck laxity.</strong> A sharper jawline and a clearer angle between jaw and neck.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p05-after.webp" alt="Patient 5 after facelift" width="841" height="631" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p05-before.webp" alt="Patient 5 before facelift" width="841" height="631" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 5 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Loose skin under the chin.</strong> A tighter neck and a crisper jawline.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p06-after.webp" alt="Patient 6 after facelift" width="671" height="503" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p06-before.webp" alt="Patient 6 before facelift" width="671" height="503" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 6 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Jowls and folds around the mouth.</strong> A clearly defined jawline and a much tighter neck.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p07-after.webp" alt="Patient 7 after facelift" width="785" height="589" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p07-before.webp" alt="Patient 7 before facelift" width="785" height="589" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 7 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Heavy lower face.</strong> A sharper jaw and a smoother neck.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p08-after.webp" alt="Patient 8 after facelift" width="796" height="597" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p08-before.webp" alt="Patient 8 before facelift" width="796" height="597" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 8 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Lower face laxity.</strong> A cleaner jawline and a fresher, more youthful profile.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p09-after.webp" alt="Patient 9 after facelift" width="1344" height="1008" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p09-before.webp" alt="Patient 9 before facelift" width="1344" height="1008" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 9 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Deep lines and a banded neck.</strong> A lifted face with a smoother jaw and neck contour.</p>
-          </li>
-          <li class="result-card">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-after" src="assets/img/ba/p10-after.webp" alt="Patient 10 after facelift" width="388" height="291" loading="lazy">
-              <div class="compare-before"><img src="assets/img/ba/p10-before.webp" alt="Patient 10 before facelift" width="388" height="291" loading="lazy"></div>
-              <span class="compare-handle" aria-hidden="true"><span></span></span>
-              <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare patient 10 before and after">
-              <span class="compare-tag compare-tag--before">Before</span><span class="compare-tag compare-tag--after">After</span>
-            </div>
-            <p class="result-caption"><strong>Loose skin along the jaw.</strong> A firmer neck and a more defined jaw.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-        <div class="results-progress" aria-hidden="true"><span data-results-bar></span></div>
-        <p class="results-disclaimer">All photos are shown with the permission of Dr Davide's patients. Results vary from person to person.</p>
-      </div>
-    </section>
-
-    <!-- ============ BENEFITS ============ -->
-    <section class="benefits section" id="benefits" aria-labelledby="benefits-title">
-      <div class="container benefits-grid">
-        <div class="benefits-copy">
-          <h2 id="benefits-title" class="display-lg">What a facelift can do for you</h2>
-          <p class="lede">A well planned facelift works on the structures that have moved, so the changes look settled and natural rather than stretched.</p>
-          <ul class="benefit-list">
-            <li>
-              <h3>A defined jawline again</h3>
-              <p>Jowls are lifted back into place, restoring the clean line from chin to ear.</p>
-            </li>
-            <li>
-              <h3>A smoother, firmer neck</h3>
-              <p>Loose skin and neck bands are tightened, often with a platysma muscle repair.</p>
-            </li>
-            <li>
-              <h3>Lifted cheeks, softer folds</h3>
-              <p>Repositioning the midface eases the heaviness around the nose and mouth.</p>
-            </li>
-            <li>
-              <h3>Your own expression</h3>
-              <p>The deep layers carry the lift, so your face moves and smiles as it always has.</p>
-            </li>
-            <li>
-              <h3>Results measured in years</h3>
-              <p>You will keep looking fresher than you would have without surgery as time goes on.</p>
-            </li>
-            <li>
-              <h3>Scars that disappear into folds</h3>
-              <p>Incisions follow the natural creases around the ear and the hairline.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="benefits-media">
-          <figure class="benefits-main reveal">
-            <img src="assets/img/fl/terrace-1200.webp" srcset="assets/img/fl/terrace-700.webp 700w, assets/img/fl/terrace-1200.webp 1200w" sizes="(min-width: 1024px) 42vw, 92vw" alt="A woman laughing on a sunlit terrace by the sea" width="1200" height="1607" loading="lazy">
-          </figure>
-          <figure class="benefits-satellite" data-parallax="-0.1">
-            <img src="assets/img/fl/dinner-900.webp" alt="A woman with a silver bob laughing at dinner with friends" width="900" height="604" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CANDIDATES ============ -->
-    <section class="candidates section" id="candidates" aria-labelledby="candidates-title">
-      <div class="container">
-        <div class="candidates-head">
-          <h2 id="candidates-title" class="display-lg">Is a facelift right for you?</h2>
-          <p class="lede">Age matters less than what you see in the mirror. You may be a good candidate if any of these sound familiar.</p>
-        </div>
-        <div class="candidates-mosaic">
-          <figure class="cand-img cand-img--a reveal">
-            <img src="assets/img/fl/man-1200.webp" srcset="assets/img/fl/man-700.webp 700w, assets/img/fl/man-1200.webp 1200w" sizes="(min-width: 1024px) 28vw, 60vw" alt="A man in his sixties seated by a window" width="1200" height="1607" loading="lazy">
-          </figure>
-          <div class="cand-card">
-            <h3>Concerns a facelift treats</h3>
-            <ul class="check-list">
-              <li>Jowls blurring the line of your jaw</li>
-              <li>Loose skin or visible bands on the neck</li>
-              <li>Cheeks that have dropped, deepening the folds beside the nose and mouth</li>
-              <li>No clear angle between jaw and neck</li>
-              <li>A tired, heavy look that rest and fillers no longer fix</li>
-            </ul>
-          </div>
-          <figure class="cand-img cand-img--b reveal">
-            <img src="assets/img/gen/testimonial-1400.webp" srcset="assets/img/gen/testimonial-1400.webp 1400w, assets/img/gen/testimonial-2000.webp 2000w" sizes="(min-width: 1024px) 40vw, 92vw" alt="A woman sitting by a tall window in a navy room" width="1400" height="781" loading="lazy">
-          </figure>
-          <div class="cand-card cand-card--navy">
-            <h3>You are likely to be suitable if you</h3>
-            <ul class="check-list">
-              <li>Are in good general health</li>
-              <li>Do not smoke, or are ready to stop before and after surgery</li>
-              <li>Want a natural improvement rather than a new face</li>
-              <li>Have tried non-surgical treatments and want a longer lasting change</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ HOW IT WORKS ============ -->
-    <section class="procedure section" id="procedure" aria-labelledby="procedure-title">
-      <div class="container procedure-grid">
-        <div class="procedure-head">
-          <h2 id="procedure-title" class="display-lg">How a facelift works</h2>
-          <p class="lede">Ageing happens in layers. As the deeper supporting tissues loosen, the skin above them follows. Lifting the skin alone does not last and tends to look pulled, so Dr Davide works from the inside out.</p>
-        </div>
-
-        <div class="anatomy" data-anatomy>
-          <div class="anatomy-figure reveal">
-            <img src="assets/img/fl/anatomy-1600.webp" srcset="assets/img/fl/anatomy-900.webp 900w, assets/img/fl/anatomy-1600.webp 1600w" sizes="(min-width: 1024px) 56vw, 100vw" alt="Pen and ink study of the layers of the face, with lift arrows over the cheek and jaw" width="1600" height="1195" loading="lazy">
-            <button type="button" class="hotspot" style="left: 30%; top: 36%;" data-hotspot="0" aria-label="Show: incisions"><span>1</span></button>
-            <button type="button" class="hotspot" style="left: 37%; top: 50%;" data-hotspot="1" aria-label="Show: the SMAS layer"><span>2</span></button>
-            <button type="button" class="hotspot" style="left: 47%; top: 61%;" data-hotspot="2" aria-label="Show: jawline and jowls"><span>3</span></button>
-            <button type="button" class="hotspot" style="left: 41%; top: 71%;" data-hotspot="3" aria-label="Show: the platysma muscle"><span>4</span></button>
-          </div>
-
-          <div class="anatomy-panel">
-            <div class="anatomy-tabs" role="tablist" aria-label="Layers of a facelift">
-              <button type="button" role="tab" id="tab-0" aria-controls="layer-0" aria-selected="true" data-layer-tab="0"><span>1</span>Incisions</button>
-              <button type="button" role="tab" id="tab-1" aria-controls="layer-1" aria-selected="false" data-layer-tab="1" tabindex="-1"><span>2</span>SMAS</button>
-              <button type="button" role="tab" id="tab-2" aria-controls="layer-2" aria-selected="false" data-layer-tab="2" tabindex="-1"><span>3</span>Jawline</button>
-              <button type="button" role="tab" id="tab-3" aria-controls="layer-3" aria-selected="false" data-layer-tab="3" tabindex="-1"><span>4</span>Neck</button>
-            </div>
-            <div class="anatomy-layer" role="tabpanel" id="layer-0" aria-labelledby="tab-0" data-layer="0">
-              <h3>Fine, hidden incisions</h3>
-              <p>Incisions follow the natural creases in front of and behind the ear, extending into the temple hairline only when the upper face needs it. They heal as fine lines that are very hard to spot, even up close.</p>
-            </div>
-            <div class="anatomy-layer" role="tabpanel" id="layer-1" aria-labelledby="tab-1" data-layer="1" hidden>
-              <h3>Repositioning the SMAS</h3>
-              <p>The superficial musculo aponeurotic system, or SMAS, is the supportive layer beneath the skin and fat. Dr Davide lifts and secures it by plication or advancement, or uses a deep plane approach where it suits your anatomy. Because the deep layer carries the tension, the skin lies naturally on top.</p>
-            </div>
-            <div class="anatomy-layer" role="tabpanel" id="layer-2" aria-labelledby="tab-2" data-layer="2" hidden>
-              <h3>Redefining the jawline</h3>
-              <p>The direction and strength of each lift are planned around your proportions and expression lines. Restoring the tissue to its original position removes jowls and redraws the jaw, while fat transfer can add back volume where the face has hollowed.</p>
-            </div>
-            <div class="anatomy-layer" role="tabpanel" id="layer-3" aria-labelledby="tab-3" data-layer="3" hidden>
-              <h3>Platysmaplasty for the neck</h3>
-              <p>The platysma is the thin muscle that forms visible bands as it loosens. Reshaping it, sometimes with liposuction under the chin, gives the neck a smooth contour and a crisp angle beneath the jaw. Excess skin is then trimmed and closed with fine sutures.</p>
-            </div>
-            <dl class="procedure-facts">
-              <div><dt>Operating time</dt><dd>2 to 4 hours</dd></div>
-              <div><dt>Anaesthetic</dt><dd>General</dd></div>
-              <div><dt>Hospital stay</dt><dd>Day case or one night</dd></div>
-              <div><dt>Social recovery</dt><dd>14 to 21 days</dd></div>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ JOURNEY ============ -->
-    <section class="journey section" id="journey" aria-labelledby="journey-title">
-      <div class="container journey-head">
-        <h2 id="journey-title" class="display-lg">Your facelift journey</h2>
-        <p class="lede">From the first conversation to the day you stop thinking about your recovery, you will know what comes next.</p>
-        <div class="journey-nav">
-          <button type="button" class="round-btn round-btn--dark" data-journey-prev aria-label="Previous step">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-          </button>
-          <button type="button" class="round-btn round-btn--dark" data-journey-next aria-label="Next step">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-      </div>
-      <ol class="journey-track" data-journey>
-        <li class="step">
-          <figure><img src="assets/img/gen/step-consultation-700.webp" srcset="assets/img/gen/step-consultation-700.webp 700w, assets/img/gen/step-consultation-1200.webp 1200w" sizes="(min-width: 1024px) 26vw, 78vw" alt="A quiet consulting room with two armchairs" width="700" height="869" loading="lazy"></figure>
-          <span class="step-num">1</span>
-          <h3>Consultation</h3>
-          <p>Dr Davide assesses your skin quality, fat distribution, the SMAS, the neck muscle and the bone structure beneath, and listens to what bothers you most.</p>
+          </a>
         </li>
-        <li class="step">
-          <figure><img src="assets/img/gen/planning-700.webp" srcset="assets/img/gen/planning-700.webp 700w, assets/img/gen/planning-1200.webp 1200w" sizes="(min-width: 1024px) 26vw, 78vw" alt="A surgeon's hands sketching facial proportions" width="700" height="869" loading="lazy"></figure>
-          <span class="step-num">2</span>
-          <h3>Your personal plan</h3>
-          <p>You receive a written plan covering the technique, any combined procedures such as fat transfer or neck liposuction, recovery and costs.</p>
-        </li>
-        <li class="step">
-          <figure><img src="assets/img/gen/pre-op-700.webp" srcset="assets/img/gen/pre-op-700.webp 700w, assets/img/gen/pre-op-1200.webp 1200w" sizes="(min-width: 1024px) 26vw, 78vw" alt="A surgeon reassuring a patient in a hospital bed" width="700" height="869" loading="lazy"></figure>
-          <span class="step-num">3</span>
-          <h3>Preparation</h3>
-          <p>Pre-operative tests, advice on medicines and supplements, and a smoke free period of several weeks to protect healing.</p>
-        </li>
-        <li class="step">
-          <figure><img src="assets/img/fl/markings-700.webp" srcset="assets/img/fl/markings-700.webp 700w, assets/img/fl/markings-1200.webp 1200w" sizes="(min-width: 1024px) 26vw, 78vw" alt="Surgical markings being drawn along a patient's jawline" width="700" height="1206" loading="lazy"></figure>
-          <span class="step-num">4</span>
-          <h3>Surgery day</h3>
-          <p>Dr Davide marks the lift vectors, then operates under general anaesthetic for two to four hours. Most patients go home the same day or after one night.</p>
-        </li>
-        <li class="step">
-          <figure><img src="assets/img/fl/recovery-900.webp" srcset="assets/img/fl/recovery-900.webp 900w, assets/img/fl/recovery-1600.webp 1600w" sizes="(min-width: 1024px) 26vw, 78vw" alt="A woman resting at home in a soft chin wrap with tea and a book" width="900" height="604" loading="lazy"></figure>
-          <span class="step-num">5</span>
-          <h3>The first two weeks</h3>
-          <p>Swelling and bruising peak early and settle through the first week. Stitches come out, and by day 10 to 14 most people are back to normal routines.</p>
-        </li>
-        <li class="step">
-          <figure><img src="assets/img/fl/dinner-900.webp" srcset="assets/img/fl/dinner-900.webp 900w, assets/img/fl/dinner-1600.webp 1600w" sizes="(min-width: 1024px) 26vw, 78vw" alt="A woman laughing at a candlelit dinner" width="900" height="604" loading="lazy"></figure>
-          <span class="step-num">6</span>
-          <h3>Back in the world</h3>
-          <p>You are ready for social plans within two to three weeks, while the result keeps refining. Follow up appointments continue for a year or more.</p>
-        </li>
-      </ol>
-      <div class="container"><div class="journey-progress" aria-hidden="true"><span data-journey-bar></span></div></div>
-    </section>
+      </ul>
+    </main>
 
-    <!-- ============ STATEMENT BAND ============ -->
-    <section class="band" aria-label="Our philosophy">
-      <div class="band-media" aria-hidden="true">
-        <img src="assets/img/fl/mayfair-2400.webp" srcset="assets/img/fl/mayfair-1400.webp 1400w, assets/img/fl/mayfair-2400.webp 2400w" sizes="100vw" alt="" width="2400" height="1018" loading="lazy" data-parallax-bg>
-      </div>
-      <div class="container band-inner">
-        <blockquote>
-          <p>Every face tells a different story. My job is to restore balance and freshness, not to change who you are.</p>
-          <footer>Dr Costantino Davide</footer>
-        </blockquote>
-        <a class="btn btn-brass" href="#book">Book a consultation</a>
-      </div>
-    </section>
-
-    <!-- ============ WHY CHOOSE ============ -->
-    <section class="why" id="why" aria-labelledby="why-title">
-      <div class="why-media">
-        <img src="assets/img/gen/why-theatre-2400.webp" srcset="assets/img/gen/why-theatre-1400.webp 1400w, assets/img/gen/why-theatre-2400.webp 2400w" sizes="100vw" alt="Dr Davide in the operating theatre" width="2400" height="1610" loading="lazy">
-        <div class="container why-intro">
-          <h2 id="why-title" class="display-lg">Why patients choose Dr Davide for their facelift</h2>
-        </div>
-      </div>
-      <div class="container">
-        <ul class="why-grid">
-          <li>
-            <svg class="why-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l10 4v8c0 7-4.5 11.5-10 14C10.5 26.5 6 22 6 15V7z"/><path d="M11.5 16l3 3 6-6"/></svg>
-            <h3>GMC specialist registered</h3>
-            <p>On the Specialist Register for plastic surgery, number 6100124.</p>
-          </li>
-          <li>
-            <svg class="why-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12l11-6 11 6-11 6z"/><path d="M10 15v6c3.5 2.6 8.5 2.6 12 0v-6"/></svg>
-            <h3>Trained under Ivo Pitanguy</h3>
-            <p>Postgraduate training in Rio de Janeiro with one of the founders of modern aesthetic surgery.</p>
-          </li>
-          <li>
-            <svg class="why-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></svg>
-            <h3>35 years in surgery</h3>
-            <p>From university hospital surgery in Trieste to leading a plastic surgery department in Dubai.</p>
-          </li>
-          <li>
-            <svg class="why-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 4v24M4 16h24"/></svg>
-            <h3>Moderate, never excessive</h3>
-            <p>A philosophy of balance and proportion, so friends notice you look well, not that you had surgery.</p>
-          </li>
-          <li>
-            <svg class="why-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4h12l6 6v18H8z"/><path d="M20 4v6h6M12 17h10M12 22h7"/></svg>
-            <h3>Honest, personal advice</h3>
-            <p>If a smaller procedure or no surgery is right for you, he will tell you.</p>
-          </li>
-          <li>
-            <svg class="why-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28s-10-6.2-10-14a6 6 0 0 1 10-4.4A6 6 0 0 1 26 14c0 7.8-10 14-10 14z"/></svg>
-            <h3>Aftercare that continues</h3>
-            <p>Personal follow up with Dr Davide for a year or more after your surgery.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============ MEET THE DOCTOR ============ -->
-    <section class="surgeon section" id="surgeon" aria-labelledby="surgeon-title">
-      <div class="container surgeon-grid">
-        <div class="surgeon-collage">
-          <figure class="surgeon-main reveal">
-            <img src="assets/img/real/real-operating-1200.webp" srcset="assets/img/real/real-operating-700.webp 700w, assets/img/real/real-operating-1200.webp 1200w" sizes="(min-width: 1024px) 36vw, 80vw" alt="Dr Costantino Davide operating" width="1200" height="1490" loading="lazy">
-          </figure>
-          <figure class="surgeon-inset" data-parallax="-0.08">
-            <img src="assets/img/real/real-desk-700.webp" srcset="assets/img/real/real-desk-700.webp 700w, assets/img/real/real-desk-1200.webp 1200w" sizes="(min-width: 1024px) 22vw, 55vw" alt="Dr Davide writing at his desk" width="700" height="470" loading="lazy">
-          </figure>
-          <div class="surgeon-badge" data-parallax="0.06">
-            <img src="assets/img/real/real-headshot-480.webp" alt="Portrait of Dr Costantino Davide" width="480" height="480" loading="lazy">
-            <p><strong>GMC 6100124</strong>Specialist Register, plastic surgery</p>
-          </div>
-        </div>
-        <div class="surgeon-copy">
-          <h2 id="surgeon-title" class="display-lg">Meet Dr Costantino Davide</h2>
-          <p class="lede">Dr Davide believes beauty comes from balance and harmonious proportion. He listens first, then decides on the right path together with you.</p>
-          <p>He qualified in medicine and surgery at the University of Trieste and spent more than a decade in general and vascular surgery at the city's university hospital. He then specialised in plastic, reconstructive and aesthetic surgery at the University of Padua and completed postgraduate training in Rio de Janeiro under Professor Ivo Pitanguy.</p>
-          <p>He has operated in Italy, Albania, Togo and Dubai, where he led a plastic surgery department, and has practised in London since 2018. He consults in English, Italian, Spanish and Portuguese.</p>
-          <ul class="qual-list">
-            <li>Degree in Medicine and Surgery, University of Trieste</li>
-            <li>Specialist in Plastic, Reconstructive and Aesthetic Surgery, University of Padua</li>
-            <li>Postgraduate training with Professor Ivo Pitanguy, Rio de Janeiro</li>
-            <li>GMC Specialist Register for plastic surgery, 6100124</li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div class="logo-strip" aria-label="Memberships">
-          <p>Member of leading plastic surgery societies</p>
-          <ul>
-            <li><img src="assets/img/logos/isaps.webp" alt="ISAPS, International Society of Aesthetic Plastic Surgery" width="480" height="180" loading="lazy"></li>
-            <li><img src="assets/img/logos/esaps.webp" alt="ESAPS, European Society of Aesthetic Plastic Surgery" width="412" height="226" loading="lazy"></li>
-            <li><img src="assets/img/logos/aicpe.webp" alt="AICPE, Italian Association of Aesthetic Plastic Surgery" width="480" height="120" loading="lazy"></li>
-            <li><img src="assets/img/logos/aexpi.webp" alt="AExPI, Association of Italian Plastic Surgery Experts" width="461" height="200" loading="lazy"></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PRICING ============ -->
-    <!-- PLACEHOLDER PRICING: replace the figure and inclusions with real prices -->
-    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
-      <div class="pricing-media">
-        <img src="assets/img/fl/harley-2400.webp" srcset="assets/img/fl/harley-1400.webp 1400w, assets/img/fl/harley-2400.webp 2400w" sizes="100vw" alt="Georgian townhouses on Harley Street at dusk" width="2400" height="1018" loading="lazy">
-      </div>
-      <div class="pricing-card">
-        <h2 id="pricing-title" class="display-md">Facelift pricing</h2>
-        <p class="price"><span class="price-from">From</span><span class="price-figure">£9,500</span></p>
-        <p class="price-note">Your exact fee depends on the extent of surgery and any combined procedures, and is confirmed in writing after your consultation.</p>
-        <ul class="check-list check-list--light">
-          <li>Consultation and personal plan with Dr Davide</li>
-          <li>Surgeon and anaesthetist fees</li>
-          <li>Hospital and theatre costs</li>
-          <li>Post-operative garment and dressings</li>
-          <li>Follow up appointments for a year or more</li>
-        </ul>
-        <a class="btn btn-brass btn-lg" href="#book">Book a consultation</a>
-      </div>
-    </section>
-
-    <!-- ============ FAQ ============ -->
-    <section class="faq section" id="faq" aria-labelledby="faq-title">
-      <div class="container faq-grid">
-        <div class="faq-aside">
-          <h2 id="faq-title" class="display-lg">Your questions, answered</h2>
-          <figure class="faq-img reveal">
-            <img src="assets/img/gen/faq-portrait-1200.webp" srcset="assets/img/gen/faq-portrait-700.webp 700w, assets/img/gen/faq-portrait-1200.webp 1200w" sizes="(min-width: 1024px) 30vw, 80vw" alt="Dr Davide seated at his desk" width="1200" height="1490" loading="lazy">
-          </figure>
-          <div class="faq-call">
-            <p>Something else on your mind?</p>
-            <a href="tel:+447949910562">+44 7949 910562</a>
-          </div>
-        </div>
-        <div class="faq-list" data-faq>
-          <details>
-            <summary>What is the best age for a facelift?</summary>
-            <div><p>There is no ideal age. What matters is the degree of laxity in your face and neck, your skin quality and your general health. Some patients come in their late forties, others in their seventies. Dr Davide will tell you honestly whether surgery is the right step now.</p></div>
-          </details>
-          <details>
-            <summary>Is a facelift painful?</summary>
-            <div><p>You are asleep under general anaesthetic during surgery. Afterwards most people describe tightness and numbness rather than pain, which is managed well with simple painkillers for the first few days.</p></div>
-          </details>
-          <details>
-            <summary>When will I see the final result?</summary>
-            <div><p>You will see a clear improvement once the early swelling settles after two to three weeks. Residual swelling and numbness fade gradually over the following months, and scars continue to soften for up to a year.</p></div>
-          </details>
-          <details>
-            <summary>Can I combine a facelift with other procedures?</summary>
-            <div><p>Yes. Facelifts are often combined with fat transfer to restore volume, liposuction under the chin, or eyelid surgery for a balanced result in one recovery. Your plan will explain what is worthwhile and what is not.</p></div>
-          </details>
-          <details>
-            <summary>Do I really have to stop smoking?</summary>
-            <div><p>Yes. Smoking and nicotine reduce blood flow to the skin and significantly raise the risk of healing problems. You will be asked to stop for several weeks before and after surgery.</p></div>
-          </details>
-          <details>
-            <summary>Will my hairline or ears look different?</summary>
-            <div><p>Incisions are planned to preserve your natural hairline and the shape of the earlobe, so you can wear your hair up once healed. Careful closure keeps the skin around the ear looking untouched.</p></div>
-          </details>
-          <details>
-            <summary>Are there non-surgical alternatives?</summary>
-            <div><p>Fillers, skin treatments and toxins can refresh the face, but they cannot reposition tissue that has descended. If a non-surgical approach would serve you better, Dr Davide will say so at your consultation.</p></div>
-          </details>
-          <details>
-            <summary>Can I have my facelift in Trieste?</summary>
-            <div><p>Yes. Dr Davide also operates at Day Surgery Zudecche in Trieste, Italy, and consults in English, Italian, Spanish and Portuguese.</p></div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ BOOKING ============ -->
-    <section class="book" id="book" aria-labelledby="book-title">
-      <div class="book-media" aria-hidden="true">
-        <img src="assets/img/fl/room-2400.webp" srcset="assets/img/fl/room-1400.webp 1400w, assets/img/fl/room-2400.webp 2400w" sizes="100vw" alt="" width="2400" height="1340" loading="lazy">
-      </div>
-      <div class="container book-grid">
-        <div class="book-copy">
-          <h2 id="book-title" class="display-lg">Book your facelift consultation</h2>
-          <p class="lede">Tell us a little about yourself and what you would like to change. We will call you back to arrange a consultation with Dr Davide on Harley Street or in Holloway.</p>
-          <ul class="book-contact">
-            <li><a href="tel:+447949910562"><span>London</span>+44 7949 910562</a></li>
-            <li><a href="mailto:drdavide@costantinodavide.com"><span>Email</span>drdavide@costantinodavide.com</a></li>
-          </ul>
-        </div>
-
-        <form class="book-form" data-book-form novalidate>
-          <div class="form-row">
-            <div class="field">
-              <label for="f-first">First name</label>
-              <input id="f-first" name="first_name" type="text" autocomplete="given-name" required>
-              <p class="field-error" data-error-for="f-first">Enter your first name.</p>
-            </div>
-            <div class="field">
-              <label for="f-last">Last name</label>
-              <input id="f-last" name="last_name" type="text" autocomplete="family-name" required>
-              <p class="field-error" data-error-for="f-last">Enter your last name.</p>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" required>
-              <p class="field-error" data-error-for="f-email">Enter an email address like name@example.com.</p>
-            </div>
-            <div class="field">
-              <label for="f-phone">Phone</label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
-              <p class="field-error" data-error-for="f-phone">Enter a phone number we can call you on.</p>
-            </div>
-          </div>
-          <div class="field">
-            <label for="f-source">How did you hear about us?</label>
-            <select id="f-source" name="source">
-              <option value="">Choose one</option>
-              <option>Google search</option>
-              <option>Instagram</option>
-              <option>Friend or family</option>
-              <option>Referred by a doctor</option>
-              <option>Doctify</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-message">Message <span class="optional">(optional)</span></label>
-            <textarea id="f-message" name="message" rows="4" placeholder="What would you like to change?"></textarea>
-          </div>
-          <button class="btn btn-brass btn-lg btn-block" type="submit">Request my consultation</button>
-          <p class="form-privacy">We only use your details to arrange your consultation.</p>
-          <div class="form-success" data-form-success hidden tabindex="-1">
-            <h3>Request sent</h3>
-            <p>Thank you. Our team will call you within one working day to arrange your consultation.</p>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/img/logos/logo-white.webp" alt="Dr Costantino Davide" width="900" height="230" loading="lazy">
-        <p>Specialist plastic, reconstructive and aesthetic surgeon in London and Trieste.</p>
-        <a class="footer-phone" href="tel:+447949910562">+44 7949 910562</a>
-        <a class="footer-social" href="https://www.instagram.com/drcostantinodavide/" target="_blank" rel="noopener" aria-label="Dr Davide on Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-          Instagram
-        </a>
-      </div>
-      <div class="footer-col">
-        <h2 class="footer-heading">London</h2>
-        <address><strong>Harley Health Village</strong>64 Harley Street<br>London W1G 7HB</address>
-        <address><strong>Holloway Surgical Centre</strong>Unit 5, 6 Hornsey Street<br>London N7 8GR</address>
-        <a href="tel:+447949910562">+44 7949 910562</a>
-      </div>
-      <div class="footer-col">
-        <h2 class="footer-heading">Trieste</h2>
-        <address><strong>Day Surgery Zudecche</strong>Via delle Zudecche 1<br>34122 Trieste, Italy</address>
-        <a href="tel:+393356948680">+39 335 694 8680</a>
-        <a href="mailto:drdavide@costantinodavide.com">drdavide@costantinodavide.com</a>
-      </div>
-    </div>
-    <div class="container footer-legal">
-      <p class="footer-disclaimer">The information on this page is for general guidance and does not replace a consultation with a qualified surgeon. All surgery carries risks, including bleeding, infection, scarring and changes in sensation. Results vary between individuals and cannot be guaranteed. Dr Costantino Davide is listed on the GMC Specialist Register for plastic surgery, number 6100124.</p>
-      <div class="footer-bottom">
-        <p>&copy; <span data-year>2026</span> Dr Costantino Davide</p>
-        <p>Powered by <a href="https://onlinemarketingfordoctors.com/" target="_blank" rel="noopener">Online Marketing For Doctors</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <a class="to-top" href="#top" aria-label="Back to top" data-to-top>
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg>
-  </a>
-
-  <script src="assets/js/main.js" defer></script>
+    <footer>
+      <p>Powered by <a href="https://onlinemarketingfordoctors.com/" target="_blank" rel="noopener">Online Marketing For Doctors</a></p>
+    </footer>
+  </div>
 </body>
 </html>
