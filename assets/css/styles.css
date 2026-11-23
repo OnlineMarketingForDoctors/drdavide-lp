@@ -585,7 +585,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .candidates-mosaic { display: flex; flex-direction: column; gap: 20px; }
   .cand-img--a { aspect-ratio: 4 / 3; }
   .cand-img--a img { object-position: 50% 30%; }
-  .cand-card--navy { margin: -60px 0 0 16px; }
+  .cand-card--navy { margin: -60px 16px 0; }
 }
 
 /* =========================================================
@@ -1004,6 +1004,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 @media (max-width: 639px) {
-  .why-media > img { object-position: 72% 30%; }
-  .why-media::after { background: linear-gradient(180deg, rgba(14, 28, 46, .2) 0%, rgba(14, 28, 46, .78) 18%, rgba(14, 28, 46, .9) 40%, rgba(14, 28, 46, .96) 100%); }
+  /* Phones: the photo becomes its own block at the top so his face stays clear of the text */
+  .why-media { position: relative; height: 118vw; max-height: 560px; overflow: hidden; }
+  .why-media > img { object-position: 76% 18%; }
+  .why-media::after { background: linear-gradient(180deg, rgba(14, 28, 46, 0) 45%, rgba(14, 28, 46, .75) 75%, var(--navy-ink) 100%); }
+  .why-intro { padding-bottom: 28px; }
+  .why-grid { margin-top: 8px; }
 }
