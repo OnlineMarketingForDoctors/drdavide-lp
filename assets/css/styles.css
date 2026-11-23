@@ -353,13 +353,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 @media (max-width: 899px) {
   .hero { display: block; min-height: 0; background: var(--navy-ink); }
   .hero::before { display: none; }
-  .hero-media { position: relative; height: 78vw; max-height: 620px; z-index: 0; }
+  .hero-media { position: relative; height: 108vw; max-height: 680px; z-index: 0; }
   .hero-media::after {
-    content: ""; position: absolute; inset: 40% 0 -1px 0;
+    content: ""; position: absolute; inset: 62% 0 -1px 0;
     background: linear-gradient(180deg, rgba(14, 28, 46, 0) 0%, rgba(14, 28, 46, .7) 55%, var(--navy-ink) 100%);
   }
-  .hero-media img { object-position: 50% 20%; }
-  .hero-inner { display: block; padding: 0 var(--gutter) 48px; margin-top: -72px; z-index: 1; }
+  .hero-media img { object-position: 50% 0%; }
+  .hero-inner { display: block; padding: 0 var(--gutter) 48px; margin-top: -56px; z-index: 1; }
   .hero-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
   .hero-actions .btn { flex: 1 1 100%; }
   .hero-ba {
