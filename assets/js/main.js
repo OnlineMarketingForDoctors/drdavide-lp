@@ -37,7 +37,7 @@
         navLinks.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + entry.target.id); });
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    navLinks.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) sectionObserver.observe(s); });
+    navLinks.forEach(function (a) { var h = a.getAttribute('href'); if (h.charAt(0) !== '#') return; var s = document.querySelector(h); if (s) sectionObserver.observe(s); });
   }
 
   /* ---------- Compare sliders ---------- */
