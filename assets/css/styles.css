@@ -929,10 +929,18 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border: 1px solid rgba(221, 195, 162, .3);
 }
 .pricing-card .display-md { color: var(--white); }
+.price-options { margin-top: 28px; display: grid; gap: 0; }
+.price-options li { padding-block: 22px; border-top: 1px solid rgba(255, 255, 255, .14); }
+.price-options li:last-child { border-bottom: 1px solid rgba(255, 255, 255, .14); }
+.price-options h3 { font-family: var(--font-text); font-weight: 600; font-size: 1.0625rem; color: var(--white); margin: 0; }
+.price-options .price { margin-top: 6px; }
+.price-options .price-figure { font-size: clamp(2.75rem, 5vw, 4rem); }
+.price-incl { margin-top: 8px; font-size: .9375rem; color: var(--on-navy); padding-left: 26px; position: relative; }
+.price-incl::before { content: ""; position: absolute; left: 0; top: .2em; width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid var(--brass); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C6A27A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center / 10px no-repeat; }
 .price { margin-top: 24px; display: flex; align-items: baseline; gap: 14px; }
 .price-from { font-size: 1.0625rem; color: var(--on-navy-muted); }
 .price-figure { font-family: var(--font-display); font-size: clamp(3.5rem, 7vw, 5.5rem); line-height: 1; color: var(--brass-light); letter-spacing: -0.02em; }
-.price-note { margin-top: 16px; color: var(--on-navy-muted); font-size: .9375rem; max-width: 30em; }
+.price-note { margin: 20px 0 32px; color: var(--on-navy-muted); font-size: .9375rem; max-width: 30em; }
 .pricing-card .check-list { margin: 28px 0 36px; padding-top: 28px; border-top: 1px solid rgba(255, 255, 255, .14); }
 
 @media (max-width: 899px) {
