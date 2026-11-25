@@ -98,6 +98,45 @@
     if (!reduceMotion) { setTimeout(sweep, 1700); startTimer(); }
   }
 
+  /* ---------- Reviews: Read more for long reviews, full text in a dialog ---------- */
+  var reviews = document.querySelector('[data-reviews]');
+  if (reviews) {
+    var dialog = document.querySelector('[data-review-dialog]');
+    var dialogBody = document.querySelector('[data-review-dialog-body]');
+    var lastTrigger = null;
+    function markClamped() {
+      Array.prototype.forEach.call(reviews.querySelectorAll('.review-card'), function (card) {
+        var text = card.querySelector('[data-review-text]');
+        var btn = card.querySelector('.review-more');
+        text.classList.remove('is-clamped'); btn.hidden = true;
+        if (text.scrollHeight > text.clientHeight + 2) { text.classList.add('is-clamped'); btn.hidden = false; }
+      });
+    }
+    markClamped();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(markClamped);
+    window.addEventListener('resize', markClamped);
+    reviews.addEventListener('click', function (e) {
+      var btn = e.target.closest('.review-more');
+      if (!btn || !dialog) return;
+      var card = btn.closest('.review-card');
+      var clone = card.cloneNode(true);
+      clone.querySelector('.review-more').remove();
+      clone.removeAttribute('aria-hidden');
+      var name = clone.querySelector('.review-who strong'); if (name) name.id = 'review-dialog-name';
+      var txt = clone.querySelector('[data-review-text]'); txt.classList.remove('is-clamped');
+      dialogBody.innerHTML = '';
+      Array.prototype.slice.call(clone.children).forEach(function (c) { dialogBody.appendChild(c); });
+      lastTrigger = btn;
+      reviews.classList.add('is-paused');
+      if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+    });
+    if (dialog) {
+      dialog.querySelector('[data-review-close]').addEventListener('click', function () { dialog.close(); });
+      dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+      dialog.addEventListener('close', function () { reviews.classList.remove('is-paused'); if (lastTrigger) lastTrigger.focus(); });
+    }
+  }
+
   /* ---------- Results carousel ---------- */
   var results = document.querySelector('[data-results]');
   if (results) {

@@ -17,5 +17,6 @@
 - Design system is shared with the main Dr Davide site (repo `OnlineMarketingForDoctors/constantino-davide`): navy #1A3350, brass #C6A27A, Figtree for text. Headlines on this page use Tenor Sans (the main site uses Bodoni Moda).
 - Images are webp in `assets/img/` (`fl/` = generated for this page, `gen/` and `real/` = reused from the main site, `ba/` = facelift before and afters).
 - Pricing is placeholder (marked with an HTML comment). The booking form is a LeadConnector (GoHighLevel) iframe embed, form ID `Lp9l7e4aHfZ1Xum5ykQl`; `form_embed.js` sizes the iframe to its content.
+- Reviews carousel (facelift page, below the hero): real Google and RealSelf reviews, copied word for word from the client's screenshots. The card list is written twice in the HTML so the marquee loops; edit both copies. RealSelf logo: `assets/img/reviews/realself.webp`.
 - Google tag (GTM-M39T7P9V) sits immediately after `<head>` on every page. Add it to every new page, once only.
 - Copy rule: no em dashes.
